@@ -1,0 +1,140 @@
+@import '@fontsource/karla/400.css';
+@import '@fontsource/karla/500.css';
+@import '@fontsource/karla/700.css';
+@import '@fontsource/ubuntu-mono/400.css';
+@import '@fontsource/ubuntu-mono/400-italic.css';
+@import '@fontsource/ubuntu-mono/700.css';
+@import '@fontsource/michroma/400.css';
+@import '@fontsource/unbounded/400.css';
+@import '@fontsource/unbounded/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #fbf4f3;
+  --cream-rgb: 251 244 243;
+  --ink: #000000;
+  --ink-rgb: 0 0 0;
+  --panel: #41413e;
+  --panel-rgb: 65 65 62;
+  --accent: #38bdf8;
+  --accent-rgb: 56 189 248;
+  --ghost: rgba(128, 128, 128, 0.2);
+  --accent-glow: rgba(251, 244, 243, 0.35);
+}
+
+.dark {
+  --accent-glow: rgba(56, 189, 248, 0.65);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: 'Karla', sans-serif;
+}
+
+.frame-blend {
+  mix-blend-mode: difference;
+  color: #ffffff;
+}
+
+@keyframes socialWave {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.36);
+  }
+}
+
+.social-wave-item {
+  animation: socialWave 2.1s ease-in-out infinite;
+}
+
+@keyframes avatarBreathe {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.008);
+  }
+}
+
+.avatar-breathe > img {
+  animation: avatarBreathe 3.6s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes aboutFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.about-avatar-float {
+  animation: aboutFloat 4.2s ease-in-out infinite;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(251, 244, 243, 0.06);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(251, 244, 243, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-wave-item,
+  .avatar-breathe > img,
+  .about-avatar-float {
+    animation: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.watermark-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
+  font-size: clamp(3.5rem, 6.8vw, 9rem);
+  color: var(--ghost);
+  user-select: text;
+  pointer-events: none;
+  letter-spacing: 0.04em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent, currentColor);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 2px var(--ink);
+}

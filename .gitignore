@@ -1,0 +1,10 @@
+node_modules/
+dist/
+source-assets/
+.vercel/
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
