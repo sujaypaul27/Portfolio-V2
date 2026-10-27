@@ -11,7 +11,7 @@
 
 **An interactive, cinematic 3D portfolio showcasing full-stack engineering, Java backend systems, and cloud AI projects.**
 
-[🌐 Live Demo](https://sujaypaul.vercel.app/) • [👤 Sujay Paul . P](https://github.com/sujaypaul27) • [💼 LinkedIn](https://www.linkedin.com/in/sujay-paul272006)
+[🌐 Live Demo](https://sujaypaulportfolio-v2.vercel.app/) • [👤 Sujay Paul . P](https://github.com/sujaypaul27) • [💼 LinkedIn](https://www.linkedin.com/in/sujay-paul272006)
 
 </div>
 
@@ -120,7 +120,7 @@ The site includes production configuration via `vercel.json`:
 ## 👤 Author
 
 **Sujay Paul . P**
-- **Website:** [sujaypaul.vercel.app](https://sujaypaul.vercel.app/)
+- **Website:** [sujaypaul.vercel.app](https://sujaypaulportfolio-v2.vercel.app/)
 - **GitHub:** [@sujaypaul27](https://github.com/sujaypaul27)
 - **LinkedIn:** [sujay-paul272006](https://www.linkedin.com/in/sujay-paul272006)
 - **Email:** [sujaypaul2711@gmail.com](mailto:sujaypaul2711@gmail.com)
