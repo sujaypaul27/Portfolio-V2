@@ -183,7 +183,7 @@ export function AboutScreen() {
                 boxShadow: boxGlowShadow,
                 color: palette.creamHex,
               }}
-              className="w-full h-[58vh] sm:h-[62vh] lg:h-[64vh] min-h-[370px] max-h-[560px] backdrop-blur-[2px] border-2 flex flex-col justify-between transition-all duration-300 select-text"
+              className="w-full h-[50vh] sm:h-[58vh] md:h-[62vh] lg:h-[64vh] min-h-[320px] sm:min-h-[370px] max-h-[560px] backdrop-blur-[2px] border-2 flex flex-col justify-between transition-all duration-300 select-text"
             >
               {/* Top Tab Navigation Bar (Always-visible text + theme panel hover effect) */}
               <div
@@ -479,7 +479,7 @@ export function AboutScreen() {
           </div>
 
           {/* RIGHT COLUMN (5/12 on Desktop, stacked below on Mobile/Tablet): Floating Asymmetric Portrait Frame with Waist-Up Avatar */}
-          <div className="about-avatar-entry flex lg:col-span-5 xl:col-span-5 h-[44vh] sm:h-[50vh] lg:h-[64vh] max-h-[560px] flex-col items-center justify-between relative">
+          <div className="about-avatar-entry flex lg:col-span-5 xl:col-span-5 h-[36vh] sm:h-[44vh] md:h-[50vh] lg:h-[64vh] max-h-[560px] flex-col items-center justify-between relative">
             <div
               style={{
                 borderColor: frameBorderColor,

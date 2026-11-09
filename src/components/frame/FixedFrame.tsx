@@ -873,7 +873,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
         {/* 2. TOP EDGE LABELS: Resume + Consistency Chart (Side-by-side next to Resume) */}
         <div
           style={{ color: topLeftTextColor }}
-          className="frame-nav-item edge-top edge-top-nav absolute top-[2.4vh] sm:top-[2.5vh] left-[20vw] sm:left-[17.5vw] md:left-[16.5vw] flex items-center gap-2.5 sm:gap-4 md:gap-5 pointer-events-auto transition-colors duration-300"
+          className="frame-nav-item edge-top edge-top-nav absolute top-[2.4vh] sm:top-[2.5vh] left-[20vw] sm:left-[17.5vw] md:left-[16.5vw] hidden sm:flex items-center gap-2.5 sm:gap-4 md:gap-5 pointer-events-auto transition-colors duration-300"
         >
           <button
             type="button"
@@ -946,7 +946,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
         {/* TOP-CENTRE-RIGHT: [Theme Tab] + [Glow: Dark/Light] + [SFX On/Muted] */}
         <div
           style={{ color: topRightTextColor }}
-          className="frame-nav-item edge-top edge-top-controls absolute top-[2.2vh] sm:top-[2.3vh] right-[16.5vw] sm:right-[10.8vw] flex items-center gap-1 sm:gap-2 pointer-events-auto transition-colors duration-300"
+          className="frame-nav-item edge-top edge-top-controls absolute top-[2.2vh] sm:top-[2.3vh] right-[2.5vw] sm:right-[16.5vw] md:right-[10.8vw] flex items-center gap-1 sm:gap-2 pointer-events-auto transition-colors duration-300"
         >
           {/* NEW: Portfolio Color Theme Selector Tab (Placed right before Glow option) */}
           <button
@@ -1063,7 +1063,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
         {/* 4. TOP-RIGHT EDGE LABEL: Say hi.. (mailto) */}
         <div
           style={{ color: topRightTextColor }}
-          className="frame-nav-item edge-top edge-top-right absolute top-[2.6vh] right-[2.2vw] pointer-events-auto transition-colors duration-300"
+          className="frame-nav-item edge-top edge-top-right absolute top-[2.6vh] right-[2.2vw] pointer-events-auto transition-colors duration-300 hidden sm:block"
         >
           <a
             href={PROFILE_DATA.socials.email}
@@ -1082,7 +1082,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
         {/* 5. LEFT EDGE LABEL: Projects (rotated -90 deg) */}
         <div
           style={{ color: topLeftTextColor }}
-          className="frame-nav-item edge-left absolute left-[1.8vw] top-[34%] -translate-y-1/2 pointer-events-auto transition-colors duration-300"
+          className="frame-nav-item edge-left absolute left-[1.8vw] top-[34%] -translate-y-1/2 pointer-events-auto transition-colors duration-300 hidden md:block"
         >
           <Link
             to="/work"
@@ -1101,7 +1101,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
         {/* 6. RIGHT EDGE LABEL: Feats (rotated +90 deg) */}
         <div
           style={{ color: topRightTextColor }}
-          className="frame-nav-item edge-right absolute right-[1.8vw] top-[34%] md:top-1/2 -translate-y-1/2 pointer-events-auto transition-colors duration-300"
+          className="frame-nav-item edge-right absolute right-[1.8vw] top-[34%] md:top-1/2 -translate-y-1/2 pointer-events-auto transition-colors duration-300 hidden md:block"
         >
           <Link
             to="/feats"
@@ -1122,7 +1122,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
           <>
             <div
               style={{ color: bottomLeftTextColor }}
-              className="frame-nav-item edge-bottom edge-bottom-left absolute bottom-[2.4vh] left-[32%] -translate-x-1/2 pointer-events-auto transition-colors duration-300"
+              className="frame-nav-item edge-bottom edge-bottom-left absolute bottom-[2.4vh] left-[32%] -translate-x-1/2 pointer-events-auto transition-colors duration-300 hidden sm:block"
             >
               <Link
                 to="/about"
@@ -1140,7 +1140,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
 
             <div
               style={{ color: bottomRightTextColor }}
-              className="frame-nav-item edge-bottom edge-bottom-right absolute bottom-[2.4vh] left-[68%] -translate-x-1/2 pointer-events-auto transition-colors duration-300"
+              className="frame-nav-item edge-bottom edge-bottom-right absolute bottom-[2.4vh] left-[68%] -translate-x-1/2 pointer-events-auto transition-colors duration-300 hidden sm:block"
             >
               <Link
                 to="/skills"
@@ -1161,7 +1161,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
         {/* 9. BOTTOM-LEFT SOCIAL RAIL + LOOPING SCALE WAVE + 1PX VERTICAL LINE */}
         <div
           style={{ color: bottomLeftTextColor }}
-          className="frame-nav-item absolute left-[2.1vw] bottom-0 flex flex-col items-center gap-3 sm:gap-3.5 pointer-events-auto transition-colors duration-300"
+          className="frame-nav-item absolute left-[2.1vw] bottom-0 hidden md:flex flex-col items-center gap-3 sm:gap-3.5 pointer-events-auto transition-colors duration-300"
         >
           <ul className="flex flex-col items-center gap-3 sm:gap-3.5">
             {socialLinks.map((item, index) => {

@@ -260,7 +260,7 @@ export function HomeScreen({ replayTrigger, onReplayIntro }: HomeScreenProps) {
          ===================================================================== */}
       <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-20">
         <div
-          className="hero-box-container relative w-[84vw] md:w-[65vw] h-[72vh] md:h-[66vh] grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 invisible overflow-hidden"
+          className="hero-box-container relative w-[92vw] sm:w-[84vw] md:w-[65vw] h-[72vh] md:h-[66vh] grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 invisible overflow-hidden"
           style={{ clipPath: 'inset(0 100% 0 0)' }}
         >
           {/* Top Half (Mobile) / Left Half (Desktop): Dark Side with 1px Cream Border */}
