@@ -249,6 +249,17 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
     image: '/assets/certificates/qualcomm_ai_foundation.webp',
   },
   {
+    id: 'nptel-cloud-computing',
+    title: 'NPTEL Elite + Silver: Cloud Computing',
+    issuer: 'IIT Kharagpur (MoE, Govt. of India)',
+    date: 'Jul–Oct 2026 (12 Weeks)',
+    credentialId: 'NPTEL26CS150S685107002',
+    score: '82% (Elite + Silver)',
+    category: 'Certificates',
+    tags: ['#NPTEL', '#IITKharagpur', '#CloudComputing', '#EliteSilver'],
+    image: '/assets/certificates/nptel_cloud_computing.png',
+  },
+  {
     id: 'nptel-iot',
     title: 'NPTEL Elite: Introduction to Internet of Things',
     issuer: 'IIT Kharagpur (MoE, Govt. of India)',

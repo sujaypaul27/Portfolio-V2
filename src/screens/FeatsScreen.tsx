@@ -127,6 +127,11 @@ export function FeatsScreen() {
     setScrollVelocity(velocity);
   };
 
+  const certCount = CERTIFICATES_DATA.filter((c) => c.category === 'Certificates').length;
+  const internCount = CERTIFICATES_DATA.filter((c) => c.category === 'Internships').length;
+  const achCount = 4;
+  const totalFeatsCount = certCount + internCount + achCount;
+
   const filteredCertificates = CERTIFICATES_DATA.filter((cert) => {
     if (activeFilter === 'All') return true;
     return cert.category === activeFilter;
@@ -238,10 +243,10 @@ export function FeatsScreen() {
             <div className="flex flex-wrap items-center gap-2" role="tablist">
               {(
                 [
-                  { id: 'All', label: 'All (12)' },
-                  { id: 'Certificates', label: 'Certificates (7)' },
-                  { id: 'Internships', label: 'Internships (1)' },
-                  { id: 'Achievements', label: 'Achievements (4)' },
+                  { id: 'All', label: `All (${totalFeatsCount})` },
+                  { id: 'Certificates', label: `Certificates (${certCount})` },
+                  { id: 'Internships', label: `Internships (${internCount})` },
+                  { id: 'Achievements', label: `Achievements (${achCount})` },
                 ] as const
               ).map((chip) => {
                 const isSelected = activeFilter === chip.id;

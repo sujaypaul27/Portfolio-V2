@@ -396,10 +396,10 @@ export function AboutScreen() {
                         />
                       </div>
                       <h3 className="mt-2 font-sans font-bold text-base">
-                        Oracle OCI, Qualcomm AI &amp; NPTEL Elite Certifications
+                        Oracle OCI, Qualcomm AI &amp; NPTEL Elite/Silver Certifications
                       </h3>
                       <p className="mt-1 font-mono text-xs leading-relaxed opacity-90">
-                        Oracle Certified Generative AI Professional • Oracle AI Foundations Associate • Qualcomm &amp; Arduino Hands-On AI • 3× NPTEL Elite (IoT 70%, Soft Skills 71%, Sensors &amp; Actuators 61%).
+                        Oracle Certified Generative AI Professional • Oracle AI Foundations Associate • Qualcomm &amp; Arduino Hands-On AI • 4× NPTEL (Cloud Computing 82% Elite + Silver, Soft Skills 71% Elite, IoT 70% Elite, Sensors &amp; Actuators 61% Elite).
                       </p>
                     </div>
                   </div>
