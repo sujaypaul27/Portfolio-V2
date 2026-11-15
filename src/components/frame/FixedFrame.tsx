@@ -183,19 +183,13 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
         gsap.set('.loader-curtain-left', { xPercent: 0 });
         gsap.set('.loader-curtain-right', { xPercent: 0 });
 
-        // Draw center laser seam & fade in giant watermarks + asymmetric prism card
+        // Draw center laser seam & fade in asymmetric prism card
         tl.fromTo(
           '.loader-center-seam',
           { scaleY: 0, opacity: 1, transformOrigin: 'top center' },
           { scaleY: 1, duration: 0.7, ease: 'expo.inOut' },
           0
         )
-          .fromTo(
-            '.loader-watermark',
-            { opacity: 0, y: 24 },
-            { opacity: 1, y: 0, duration: 0.85, stagger: 0.12, ease: 'power3.out' },
-            0.08
-          )
           .fromTo(
             '.loader-prism-card',
             { scale: 0.9, opacity: 0, y: 24 },
@@ -619,7 +613,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
         className="fixed inset-0 z-[65] flex flex-col items-center justify-center select-none overflow-hidden"
         aria-hidden="true"
       >
-        {/* LEFT 50VW ARCHITECTURAL CURTAIN (Solid Black/Ink with White SUJAY + Grid & Text Mouse Parallax) */}
+        {/* LEFT 50VW ARCHITECTURAL CURTAIN (Solid Black/Ink with Grid & Text Mouse Parallax) */}
         <div
           style={{
             backgroundColor: activeThemeConfig.inkHex,
@@ -631,16 +625,6 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
         >
           <div
             style={{
-              ...labelShiftStyle(1.35),
-              color: activeThemeConfig.creamHex,
-            }}
-            className="loader-watermark absolute top-[6.5vh] left-[5vw] font-sans font-light text-[clamp(3.8rem,9.8vw,10.5rem)] leading-none tracking-[0.12em] opacity-95 pointer-events-none"
-          >
-            SUJAY
-          </div>
-
-          <div
-            style={{
               ...labelShiftStyle(0.6),
               color: `rgb(${activeThemeConfig.creamRgb} / 0.65)`,
             }}
@@ -650,7 +634,7 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
           </div>
         </div>
 
-        {/* RIGHT 50VW ARCHITECTURAL CURTAIN (Solid Crisp White/Cream with Black PAUL + Grid & Text Mouse Parallax) */}
+        {/* RIGHT 50VW ARCHITECTURAL CURTAIN (Solid Crisp White/Cream with Grid & Text Mouse Parallax) */}
         <div
           style={{
             backgroundColor: activeThemeConfig.creamHex,
@@ -660,16 +644,6 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
           }}
           className="loader-curtain-right absolute right-0 top-0 w-1/2 h-full overflow-hidden"
         >
-          <div
-            style={{
-              ...labelShiftStyle(-1.35),
-              color: activeThemeConfig.inkHex,
-            }}
-            className="loader-watermark absolute top-[6.5vh] right-[5vw] font-sans font-light text-[clamp(3.8rem,9.8vw,10.5rem)] leading-none tracking-[0.12em] opacity-95 pointer-events-none"
-          >
-            PAUL
-          </div>
-
           <div
             style={{
               ...labelShiftStyle(-0.6),
@@ -755,8 +729,8 @@ export function FixedFrame({ replayTrigger, onReplayIntro }: FixedFrameProps) {
                 </svg>
               </div>
 
-              <h2 className="font-sans font-bold text-xl sm:text-2xl tracking-tight leading-tight">
-                {PROFILE_DATA.name}
+              <h2 className="font-sans font-bold text-lg sm:text-xl tracking-wider uppercase leading-tight">
+                Portfolio Architecture
               </h2>
 
               <div
